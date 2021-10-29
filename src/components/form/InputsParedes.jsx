@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 
 function InputsParedes() {
+  const [parede1, setParede1] = useState({});
+
+  console.log(parede1);
+
+  function handleOnChange(event) {
+    const { name, value } = event.target;
+    setParede1((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
+
   return (
     <>
       <fieldset>
