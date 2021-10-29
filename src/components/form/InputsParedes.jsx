@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Inputs() {
+function InputsParedes() {
   return (
     <>
       <fieldset>
@@ -30,4 +30,4 @@ function Inputs() {
   );
 }
 
-export default Inputs;
+export default InputsParedes;
