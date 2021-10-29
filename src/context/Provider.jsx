@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import Context from './Context';
 
 function Provider({ children }) {
-  const [dataInputs, setDataInputs] = useState({
-    inputsParedes: {},
-    inputsPortaJanela: {},
-  });
+  const [dataInputs, setDataInputs] = useState({});
 
   const objContext = { dataInputs, setDataInputs };
 
