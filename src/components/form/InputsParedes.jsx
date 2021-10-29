@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import Context from '../../context/Context';
 
 function InputsParedes() {
-  const [parede1, setParede1] = useState({});
+  const { dataInputs, setDataInputs } = useContext(Context);
 
-  console.log(parede1);
+  console.log(dataInputs);
 
   function handleOnChange(event) {
     const { name, value } = event.target;
-    setParede1((prevState) => ({
+    setDataInputs((prevState) => ({
       ...prevState,
       [name]: value,
     }));
