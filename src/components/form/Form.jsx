@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './form.module.css';
-import Inputs from './Inputs';
+import InputsParedes from './InputsParedes';
 
 function Form() {
   return (
     <div className={style.container__form}>
       <form>
-        <Inputs />
+        <InputsParedes />
       </form>
     </div>
   );
