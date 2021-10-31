@@ -1,9 +1,9 @@
-function areaParede(objParedes) {
+function areaParede(inputUser) {
   const paredes = {
-    multiplicaoParede1: objParedes.parede1_Altura * objParedes.parede1_Largura,
-    multiplicaoParede2: objParedes.parede2_Altura * objParedes.parede2_Largura,
-    multiplicaoParede3: objParedes.parede3_Altura * objParedes.parede3_Largura,
-    multiplicaoParede4: objParedes.parede4_Altura * objParedes.parede4_Largura,
+    multiplicaoParede1: inputUser.parede1_Altura * inputUser.parede1_Largura,
+    multiplicaoParede2: inputUser.parede2_Altura * inputUser.parede2_Largura,
+    multiplicaoParede3: inputUser.parede3_Altura * inputUser.parede3_Largura,
+    multiplicaoParede4: inputUser.parede4_Altura * inputUser.parede4_Largura,
   };
 
   const somaAreaParedes = {
