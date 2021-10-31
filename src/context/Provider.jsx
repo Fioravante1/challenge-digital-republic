@@ -4,8 +4,14 @@ import Context from './Context';
 
 function Provider({ children }) {
   const [dataInputs, setDataInputs] = useState({});
+  const [show, setShow] = useState(false);
 
-  const objContext = { dataInputs, setDataInputs };
+  const objContext = {
+    dataInputs,
+    setDataInputs,
+    show,
+    setShow,
+  };
 
   return (
     <Context.Provider value={objContext}>

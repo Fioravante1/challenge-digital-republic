@@ -2,9 +2,7 @@ import React, { useContext } from 'react';
 import Context from '../../context/Context';
 
 function InputsJanelaPorta() {
-  const { dataInputs, setDataInputs } = useContext(Context);
-
-  console.log(dataInputs);
+  const { setDataInputs } = useContext(Context);
 
   function handleOnChange(event) {
     const { name, value } = event.target;
