@@ -11,25 +11,26 @@
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
-  height: 80%;
-  background: #ECECEC;
+  padding: 10px;
+  width: 50%;
+  font-weight: bold;
+  height: 100%;
+  background: rgb(121,78,9);
+  background: linear-gradient(90deg, rgba(121,78,9,0.41780462184873945) 28%, rgba(11,27,83,0.41780462184873945) 76%);
+  border-radius: 10px;
+  border: solid #000 1px;
 }
 
-.container__paredes {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.btn__form{
+  width: 250px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.container__porta__janela {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+p {
+  color: #B91646;
 }
