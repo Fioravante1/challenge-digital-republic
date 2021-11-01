@@ -41,18 +41,27 @@ function FormComponent() {
 
   return (
     <div className={style.container__form}>
-      <form>
-        <div className={style.container__paredes}>
-          <InputsParedes />
-        </div>
-        <div className={style.container__porta__janela}>
-          <InputsJanelaPorta />
-          <button type="button" onClick={() => setShow(true)}>Consultar</button>
-        </div>
-      </form>
+      <Form onSubmit={handleOnclick}>
+        {validForm.type === 'error' ? <p>{validForm.mensagem}</p> : ''}
+
+        <InputsParedes />
+
+        <InputsJanelaPorta />
+
+        <Button
+          className={style.btn__form}
+          variant="success"
+          type="submit"
+          onClick={handleOnclick}
+        >
+          Consultar
+        </Button>
+
+      </Form>
+
       <ModalResponse />
     </div>
   );
 }
 
-export default Form;
+export default FormComponent;
