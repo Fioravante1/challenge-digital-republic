@@ -10,8 +10,35 @@ import style from './form.module.css';
 import InputsJanelaPorta from './InputsJanelaPorta';
 import InputsParedes from './InputsParedes';
 
-function Form() {
-  const { setShow } = useContext(Context);
+function FormComponent() {
+  const { setShow, dataInputs } = useContext(Context);
+  const [validForm, setValidForm] = useState({
+    type: '',
+    mensagem: '',
+  });
+
+  async function handleOnclick(event) {
+    event.preventDefault();
+    const isValid = await schemaForm.isValid(dataInputs);
+
+    validPercentage(dataInputs);
+
+    if (validPercentage(dataInputs)) return;
+
+    if (!isValid) {
+      setValidForm({
+        type: 'error',
+        mensagem: 'Os campos de altura e largura é obrigatorio e eles devem ter no maximo 15 metros!',
+      });
+    } else {
+      setValidForm({
+        type: '',
+        mensagem: '',
+      });
+      setShow(true);
+    }
+  }
+
   return (
     <div className={style.container__form}>
       <form>
