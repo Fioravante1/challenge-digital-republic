@@ -1,5 +1,10 @@
-import React, { useContext } from 'react';
+/* eslint-disable react/jsx-no-bind */
+import React, { useContext, useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import Context from '../../context/Context';
+import schemaForm from '../../helpers/schemaForm';
+import validPercentage from '../../helpers/validPercentage';
 import ModalResponse from '../modal/Modal';
 import style from './form.module.css';
 import InputsJanelaPorta from './InputsJanelaPorta';
