@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import Context from '../../context/Context';
 
-function InputsJanelaPorta() {
+function InputsWindowDoors() {
   const { setDataInputs } = useContext(Context);
 
   function handleOnChange(event) {
@@ -41,4 +41,4 @@ function InputsJanelaPorta() {
   );
 }
 
-export default InputsJanelaPorta;
+export default InputsWindowDoors;

@@ -7,8 +7,8 @@ import schemaForm from '../../helpers/schemaForm';
 import validPercentage from '../../helpers/validPercentage';
 import ModalResponse from '../modal/Modal';
 import style from './form.module.css';
-import InputsJanelaPorta from './InputsJanelaPorta';
-import InputsParedes from './InputsParedes';
+import InputsWindowDoors from './InputsWindowDoors';
+import InputsWall from './InputsWall';
 
 function FormComponent() {
   const { setShow, dataInputs } = useContext(Context);
@@ -44,9 +44,9 @@ function FormComponent() {
       <Form onSubmit={handleOnclick}>
         {validForm.type === 'error' ? <p>{validForm.mensagem}</p> : ''}
 
-        <InputsParedes />
+        <InputsWall />
 
-        <InputsJanelaPorta />
+        <InputsWindowDoors />
 
         <Button
           className={style.btn__form}

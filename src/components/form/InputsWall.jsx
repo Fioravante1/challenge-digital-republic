@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import Context from '../../context/Context';
 
-function InputsParedes() {
+function InputsWall() {
   const { setDataInputs, dataInputs } = useContext(Context);
 
   function handleOnChange(event) {
@@ -109,4 +109,4 @@ function InputsParedes() {
   );
 }
 
-export default InputsParedes;
+export default InputsWall;
