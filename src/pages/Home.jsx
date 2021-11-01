@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from '../components/form/Form';
+import FormComponent from '../components/form/Form';
 
 function Home() {
   return (
-    <Form />
+    <FormComponent />
   );
 }
 

@@ -1,4 +1,4 @@
-function areaParede(inputUser) {
+function areaWall(inputUser) {
   const paredes = {
     multiplicaoParede1: inputUser.parede1_Altura * inputUser.parede1_Largura,
     multiplicaoParede2: inputUser.parede2_Altura * inputUser.parede2_Largura,
@@ -17,4 +17,4 @@ function areaParede(inputUser) {
   return somaAreaParedes.soma;
 }
 
-export default areaParede;
+export default areaWall;
